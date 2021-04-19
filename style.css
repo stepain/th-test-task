@@ -97,7 +97,7 @@ select {
     right: 0;
     height: 100vh;
     min-height: 800px;  
-    background: url('/img/hero.jpg') no-repeat;
+    background: url('./img/hero.jpg') no-repeat;
     background-position: bottom right;
     background-size: 1292px 827px;
 }
@@ -110,7 +110,7 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     .bg-hero {
-        background-image: url('/img/hero@2x.jpg');
+        background-image: url('./img/hero@2x.jpg');
     }
 }
 
@@ -217,19 +217,19 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .steps__items-item.open::before {
-    background-image: url('/img/bonus/1.svg');
+    background-image: url('./img/bonus/1.svg');
 }
 
 .steps__items-item.deposit::before {
-    background-image: url('/img/bonus/2.svg');
+    background-image: url('./img/bonus/2.svg');
 }
 
 .steps__items-item.contact::before {
-    background-image: url('/img/bonus/3.svg');
+    background-image: url('./img/bonus/3.svg');
 }
 
 .steps__items-item.trade::before {
-    background-image: url('/img/bonus/4.svg');
+    background-image: url('./img/bonus/4.svg');
 }
 
 .points {
@@ -294,41 +294,41 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .points__list-item.spreads::before {
-    background-image: url('/img/icons/spreads.svg');
+    background-image: url('./img/icons/spreads.svg');
 }
 
 .points__list-item.commission::before {
-    background-image: url('/img/icons/spreads.svg');
+    background-image: url('./img/icons/spreads.svg');
 }
 
 .points__list-item.markets::before {
-    background-image: url('/img/icons/spreads.svg');
+    background-image: url('./img/icons/spreads.svg');
 }
 
 .points__list-item.vps::before {
-    background-image: url('/img/icons/vps.svg');
+    background-image: url('./img/icons/vps.svg');
     position: relative;
     left: -2px;
 }
 
 .points__list-item.support::before {
-    background-image: url('/img/icons/support.svg');
+    background-image: url('./img/icons/support.svg');
 }
 
 .points__list-item.education::before {
-    background-image: url('/img/icons/education.svg');
+    background-image: url('./img/icons/education.svg');
 }
 
 .points__list-item.tools::before {
-    background-image: url('/img/icons/tools.svg');
+    background-image: url('./img/icons/tools.svg');
 }
 
 .points__list-item.trusted::before {
-    background-image: url('/img/icons/trusted.svg');
+    background-image: url('./img/icons/trusted.svg');
 }
 
 .points__list-item.multilingual::before {
-    background-image: url('/img/icons/multilingual.svg');
+    background-image: url('./img/icons/multilingual.svg');
 }
 
 .apply {
