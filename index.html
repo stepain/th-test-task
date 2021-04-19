@@ -15,12 +15,14 @@
             <a href="#learn-more" class="btn">Learn more</a>
         </div>
         <div class="spotlight">
-            <h1 class="spotlight__title">100% credit bonus up to <strong>$5,000</strong></h1>
+            <h1 class="spotlight__title">100% credit bonus <br>up to <strong>$5,000</strong></h1>
             <p class="spotlight__text">Open a live account with Switch Markets today <br>and we’ll credit your account* </p>
             <a href="#apply-form" class="btn dark">Get my bonus</a>
         </div>
-        <div class="trustpilot-score"><img src="/img/trustpilot.svg" alt="Trustpilot 5 stars"></div>
-        <p class="terms">*<a href="#">Terms & Conditions</a> apply. New customers only. A minimum deposit of 100 USD required. We reserve the right to revoke this offer at any time. The credit bonus used only for trading and can’t be withdrawn. <br>Offer valid 17/02/21 - 17/03/21</p>
+        <div>
+            <div class="trustpilot-score"><img src="/img/trustpilot.svg" alt="Trustpilot 5 stars"></div>
+            <p class="terms">*<a href="#">Terms & Conditions</a> apply. New customers only. A minimum deposit of 100 USD required. We reserve the right to revoke this offer at any time. The credit bonus used only for trading and can’t be withdrawn. <br>Offer valid 17/02/21 - 17/03/21</p>
+        </div>
     </div>
     <div id="learn-more" class="steps container">
         <div class="content-inner centered">
@@ -70,30 +72,45 @@
         </div>
     </div>
     <div id="apply-form" class="apply container centered">
-        <h2 class="apply__title">Create a live account today and get your credit bonus!</h2>
+        <h2 class="apply__title">Create a live account today and <br>get your credit bonus!</h2>
         <div class="apply__form">
-                <label for="form-first-name">First name</label>
-                <input type="text" id="form-first-name" placeholder="ex. John">
-                <label for="form-last-name">Last name</label>
-                <input type="text" id="form-last-name" placeholder="ex. Smith">
-                <label for="form-phone">Mobile number</label>
-                <input type="text" id="form-phone" placeholder="Mobile">
-                <label for="form-address">Where you live</label>
-                <input type="text" id="form-address" placeholder="ex. London">
-                <div>
-                    <input type="radio" id="form-status-individual" name="status" value="Individual" checked>
-                    <label for="form-status-individual">Individual</label>
+                <label class="apply__form-label" for="form-first-name">First name</label>
+                <input class="apply__form-input" type="text" id="form-first-name" placeholder="ex. John">
+                <label class="apply__form-label" for="form-last-name">Last name</label>
+                <input class="apply__form-input" type="text" id="form-last-name" placeholder="ex. Smith">
+                <label class="apply__form-label" for="form-phone">Mobile number</label>
+                <div class="apply__form-phone">
+                    <input class="apply__form-input" type="text" id="form-phone" placeholder="Mobile">
+                    <div class="select">
+                        <select id="form-phone-country" name="phone-country">
+                            <option value="Denmark">DE</option>
+                            <option value="Sweden">SW</option>
+                            <option value="UK" selected>UK</option>
+                            <option value="USA">US</option>
+                        </select>
+                        <span class="focus"></span>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="form-status-joint" name="status" value="Joint">
-                    <label for="form-status-joint">Joint</label>
+                <label class="apply__form-label" for="form-address">Where you live</label>
+                <input class="apply__form-input" type="text" id="form-address" placeholder="ex. London">
+                <div class="apply__form-status">
+                    <label class="apply__form-radio" for="form-status-individual">Individual
+                        <input type="radio" id="form-status-individual" name="status" value="Individual" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="apply__form-radio" for="form-status-joint">Joint
+                        <input type="radio" id="form-status-joint" name="status" value="Joint">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="apply__form-radio" for="form-status-corporate">Corporate
+                        <input type="radio" id="form-status-corporate" name="status" value="Corporate">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
-                <div>
-                    <input type="radio" id="form-status-corporate" name="status" value="Corporate">
-                    <label for="form-status-corporate">Corporate</label>
-                </div>
-                <input type="checkbox" name="consent" id="form-consent">
-                <label for="form-consent">I am over 18 and have read and agreed with the Terms and Conditions as well as the Privacy & Cookies Policy.</label>
+                <label class="apply__form-checkbox" for="form-consent">I am over 18 and have read and agreed with the Terms and Conditions as well as the Privacy & Cookies Policy.
+                    <input type="checkbox" name="consent" id="form-consent">
+                    <span class="checkmark"></span>
+                </label>
                 <button class="btn dark">Get my bonus</button>
         </div>
 
