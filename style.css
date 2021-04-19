@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'SF Pro Display';
+    font-family: 'SF Pro Display', sans-serif;
     font-weight: 600;
 }
 
@@ -191,7 +191,7 @@ only screen and (min-resolution: 2dppx) {
 .steps__items-item {
     /* counter-increment: bonus; */
     width: 26rem;
-    font-family: 'SF Pro Display';
+    font-family: 'SF Pro Display', sans-serif;
     font-size: 1.9rem;
     font-weight: 500;
     line-height: 1.21;
@@ -260,7 +260,7 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .points__article-title {
-    font-family: 'SF Pro Text';
+    font-family: 'SF Pro Text', sans-serif;
     margin-bottom: 1.4rem;
     font-size: 1.6rem;
     font-weight: 600;
