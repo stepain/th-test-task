@@ -46,7 +46,6 @@ select {
 }
 
 .container {
-    max-width: 1300px;
     margin: 0 auto;
     padding: 0 6.5rem;
     position: relative;
@@ -99,7 +98,7 @@ select {
     min-height: 800px;  
     background: url('./img/hero.jpg') no-repeat;
     background-position: bottom right;
-    background-size: 1292px 827px;
+    background-size: cover;
 }
 
 @media /* only for retina displays */
@@ -185,11 +184,9 @@ only screen and (min-resolution: 2dppx) {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    /* counter-reset: bonus; */
 }
 
 .steps__items-item {
-    /* counter-increment: bonus; */
     width: 26rem;
     font-family: 'SF Pro Display', sans-serif;
     font-size: 1.9rem;
@@ -204,15 +201,11 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .steps__items-item::before {
-    /* content: "0" counter(bonus);
-    font-size: 7.5rem;
-    font-weight: 700;
-    color: #63738120; */
     content: '';
     background-repeat: no-repeat;
     background-position: center;
-    width: 130px;
-    height: 80px;
+    width: 13rem;
+    height: 8rem;
     margin-bottom: 2.5rem;
 }
 
@@ -249,6 +242,7 @@ only screen and (min-resolution: 2dppx) {
     justify-content: space-between;
     flex-flow: row wrap;
     color: #212b36;
+    max-width: 1300px;
 }
 
 .points__article {
@@ -604,7 +598,10 @@ select:focus + .focus {
     .content-inner {
         padding: 4rem 0;
     }
-
+    .bg-hero {
+        background-position: bottom right -220px;
+    }
+    
     .bg-hero::after {
         background-image: linear-gradient(123deg, rgba(0, 0, 0, 0.55) 1%, rgb(0 0 0 / 32%) 43%, rgba(0, 0, 0, 0.55) 67%, rgba(0, 0, 0, 0.33) 100%), linear-gradient(123deg, rgba(4, 12, 72, 0.8) 1%, rgba(2, 61, 126, 0.77) 45%, rgba(0, 88, 156, 0.34) 62%, rgba(4, 209, 137, 0.85) 100%);
     }
@@ -633,5 +630,11 @@ select:focus + .focus {
 
     .footer__link-item::after {
         display: none;
+    }
+}
+
+@media (min-width : 1224px) {
+    .bg-hero {
+        background-position: top center;
     }
 }
