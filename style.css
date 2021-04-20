@@ -603,7 +603,7 @@ select:focus + .focus {
     }
     
     .bg-hero::after {
-        background-image: linear-gradient(123deg, rgba(0, 0, 0, 0.55) 1%, rgb(0 0 0 / 32%) 43%, rgba(0, 0, 0, 0.55) 67%, rgba(0, 0, 0, 0.33) 100%), linear-gradient(123deg, rgba(4, 12, 72, 0.8) 1%, rgba(2, 61, 126, 0.77) 45%, rgba(0, 88, 156, 0.34) 62%, rgba(4, 209, 137, 0.85) 100%);
+        background-image: linear-gradient(123deg, rgba(0, 0, 0, 1) 1%, rgb(0 0 0 / 32%) 43%, rgba(0, 0, 0, 0.55) 67%, rgba(0, 0, 0, 0.33) 100%), linear-gradient(123deg, rgba(4, 12, 72, 0.8) 1%, rgba(2, 61, 126, 0.77) 45%, rgba(0, 88, 156, 0.34) 62%, rgba(4, 209, 137, 0.85) 100%);
     }
 
     .stage {
