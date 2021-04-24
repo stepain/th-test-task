@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css?v24">
     <title>Switch Markets</title>
-    <script src="./js/smoothscroll.min.js"></script>
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     <div class="container"><div class="bg-hero"></div></div>
@@ -130,5 +130,9 @@
         <p class="footer__text">Risk Disclaimer: Online trading in leveraged Foreign Exchange and CFD instruments contains a high level of risk and may not be suitable for all investors. High leverage trading can subject your account to high losses as well as present opportunities for profit. Before taking the decision to invest in margin instruments, you must seriously consider your investment goals, experience level, and risk appetite. Online trading in leveraged instruments may cause you to lose some or all of the funds in your account and you should not risk any funds you cannot afford to lose. You should be aware of all the risks associated with online trading on margin and consult with an independent investment advisor if you have any concerns.</p>
         <p class="footer__text">Regional restrictions: Switch Markets does not provide trading services to anyone residing in the U.S.A, Japan, Iran and North Korea nor any other countries where the offer of our products are prohibited or restricted by laws. You must satisfy yourself that dealing in our products is permitted under the laws of the country that you reside.</p>
     </footer>
+    <script>
+        // init smooth scroll
+        var scroll = new SmoothScroll('a[href*="#"]');
+  </script>            
 </body>
 </html>
