@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css?v24">
     <title>Switch Markets</title>
-    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script src="./js/smoothscroll.min.js"></script>
 </head>
 <body>
     <div class="container"><div class="bg-hero"></div></div>
@@ -131,8 +131,20 @@
         <p class="footer__text">Regional restrictions: Switch Markets does not provide trading services to anyone residing in the U.S.A, Japan, Iran and North Korea nor any other countries where the offer of our products are prohibited or restricted by laws. You must satisfy yourself that dealing in our products is permitted under the laws of the country that you reside.</p>
     </footer>
     <script>
-        // init smooth scroll
-        var scroll = new SmoothScroll('a[href*="#"]');
+        // add event listener on load
+        window.addEventListener('load', function() {
+
+            // native smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+        });
   </script>            
 </body>
 </html>
